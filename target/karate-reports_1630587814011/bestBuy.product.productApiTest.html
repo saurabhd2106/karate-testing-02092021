@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>bestBuy.product.productApiTest</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-09-02 06:32:13 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Get all products from best buy product list</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>Get products from best buy product list and add limit</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">bestBuy/product/productApiTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Verify CRUD operations for product API</span>
+          <span class="feature-description">This feature fike will verify all crud operation for product API</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Get all products from best buy product list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2017</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">18:32:11.059 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1902</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">18:32:12.085 request:
+1 &gt; GET http://localhost:3030/products
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:32:12.975 response time in milliseconds: 883
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;2caa-hntf60vEd+nlPLETZBZEDgW4YvQ&quot;
+1 &lt; Date: Thu, 02 Sep 2021 13:02:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;total&quot;:52114,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:48530,&quot;name&quot;:&quot;Duracell - AA 1.5V CopperTop Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333415017&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&amp;skuId=48530&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:127687,&quot;name&quot;:&quot;Duracell - AA Batteries (8-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.49,&quot;upc&quot;:&quot;041333825014&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B8Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&amp;skuId=127687&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:150115,&quot;name&quot;:&quot;Energizer - MAX Batteries AA (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:4.99,&quot;upc&quot;:&quot;039800011329&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E91BP-4&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&amp;skuId=150115&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:185230,&quot;name&quot;:&quot;Duracell - C Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:8.99,&quot;upc&quot;:&quot;041333440019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1400R4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&amp;skuId=185230&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:185267,&quot;name&quot;:&quot;Duracell - D Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:9.99,&quot;upc&quot;:&quot;041333430010&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1300R4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&amp;skuId=185267&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:309062,&quot;name&quot;:&quot;Pioneer - 4\&quot; 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:144.99,&quot;upc&quot;:&quot;012562165141&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;80W maximum power (20W RMS); 4\&quot; IMPP composite cone woofer; 3/4\&quot; horn tweeter&quot;,&quot;manufacturer&quot;:&quot;Pioneer&quot;,&quot;model&quot;:&quot;TS-X200&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&amp;skuId=309062&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0300000&quot;,&quot;name&quot;:&quot;Car Electronics &amp; GPS&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0302000&quot;,&quot;name&quot;:&quot;Car Audio&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0302005&quot;,&quot;name&quot;:&quot;Car Speakers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat360500050015&quot;,&quot;name&quot;:&quot;4\&quot; Car Speakers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:312290,&quot;name&quot;:&quot;Duracell - 9V Batteries (2-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.99,&quot;upc&quot;:&quot;041333216010&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1604B2Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&amp;skuId=312290&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:333179,&quot;name&quot;:&quot;Energizer - N Cell E90 Batteries (2-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.99,&quot;upc&quot;:&quot;039800013200&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Alkaline batteries; 1.5V&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E90BP-2&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&amp;skuId=333179&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208006&quot;,&quot;name&quot;:&quot;Specialty Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:346575,&quot;name&quot;:&quot;Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln &amp; Mercury Vehicles - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:16.99,&quot;upc&quot;:&quot;086429002757&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket&quot;,&quot;manufacturer&quot;:&quot;Metra&quot;,&quot;model&quot;:&quot;99-5512&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&amp;skuId=346575&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0300000&quot;,&quot;name&quot;:&quot;Car Electronics &amp; GPS&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050023&quot;,&quot;name&quot;:&quot;Car Installation Parts &amp; Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050031&quot;,&quot;name&quot;:&quot;Deck Installation Parts&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050033&quot;,&quot;name&quot;:&quot;Dash Installation Kits&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat331600050007&quot;,&quot;name&quot;:&quot;Car Audio Installation Parts&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.limit == 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">70</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.skip != 5</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].name == &quot;Duracell - AAA Batteries (4-Pack)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].name contains &quot;Duracell&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0] contains deep { &quot;name&quot;: &quot;Duracell - AAA Batteries (4-Pack)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains deep {&quot;data&quot; : [{&quot;name&quot;: &quot;Duracell - AAA Batteries (4-Pack)&quot;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match header Content-Type == &quot;application/json; charset=utf-8&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.total == &quot;#present&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.total == &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &quot;#array&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &quot;#[10]&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == &quot;#notpresent&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">Get products from best buy product list and add limit</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>749</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">18:32:13.238 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def limit = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param $limit = limit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">674</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">18:32:13.258 request:
+1 &gt; GET http://localhost:3030/products?%24limit=4
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:32:13.920 response time in milliseconds: 661
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;115e-JWTKkDAEfb8G7bvqZsLocHJ4mXQ&quot;
+1 &lt; Date: Thu, 02 Sep 2021 13:02:13 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;total&quot;:52114,&quot;limit&quot;:4,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:48530,&quot;name&quot;:&quot;Duracell - AA 1.5V CopperTop Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333415017&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&amp;skuId=48530&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:127687,&quot;name&quot;:&quot;Duracell - AA Batteries (8-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.49,&quot;upc&quot;:&quot;041333825014&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B8Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&amp;skuId=127687&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:150115,&quot;name&quot;:&quot;Energizer - MAX Batteries AA (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:4.99,&quot;upc&quot;:&quot;039800011329&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E91BP-4&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&amp;skuId=150115&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.limit == limit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref failed">30</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.data == &quot;#[]? _ == #(limit)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">18:32:13.996 classpath:bestBuy/product/productApiTest.feature:30
+And match response.data == &quot;#[]? _ == #(limit)&quot;
+SyntaxError: Unnamed:1:5 Expected an operand but found error
+_ == #(limit)
+     ^
+
+classpath:bestBuy/product/productApiTest.feature:30
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
