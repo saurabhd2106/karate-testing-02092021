@@ -1,0 +1,4507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>bestBuy.product.productApiTest</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">12</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-09-02 08:42:00 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get all products from best buy product list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:25]"><span>[2:25]</span> <span>Get products from best buy product list and add limit</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:33]"><span>[3:33]</span> <span>Get one particular product from the list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:40]"><span>[4:40]</span> <span>Add product to the product list</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:62]"><span>[5:62]</span> <span>Add product to the product list via json file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:69]"><span>[6:69]</span> <span>Add product to the product list via json file and send another get request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7.1:105]"><span>[7.1:105]</span> <span>Verify add product api with multiple set of test data</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[7.2:106]"><span>[7.2:106]</span> <span>Verify add product api with multiple set of test data</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7.3:107]"><span>[7.3:107]</span> <span>Verify add product api with multiple set of test data</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8.1:130]"><span>[8.1:130]</span> <span>Verify add product api with multiple set of test data via csv file</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[8.2:130]"><span>[8.2:130]</span> <span>Verify add product api with multiple set of test data via csv file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8.3:130]"><span>[8.3:130]</span> <span>Verify add product api with multiple set of test data via csv file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9.1:154]"><span>[9.1:154]</span> <span>Verify add product api with multiple set of test data via csv file</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[9.2:154]"><span>[9.2:154]</span> <span>Verify add product api with multiple set of test data via csv file</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9.3:154]"><span>[9.3:154]</span> <span>Verify add product api with multiple set of test data via csv file</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">bestBuy/product/productApiTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Verify CRUD operations for product API</span>
+          <span class="feature-description">This feature fike will verify all crud operation for product API</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Get all products from best buy product list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4740</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:41:52.255 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">215</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4300</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:41:53.634 request:
+1 &gt; GET http://localhost:3030/products
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:41:56.851 response time in milliseconds: 3207
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;2caa-PHH7sikSVbSU2QV0qAOmo4R7H9A&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:56 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;total&quot;:52160,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:48530,&quot;name&quot;:&quot;Duracell - AA 1.5V CopperTop Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333415017&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&amp;skuId=48530&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:127687,&quot;name&quot;:&quot;Duracell - AA Batteries (8-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.49,&quot;upc&quot;:&quot;041333825014&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B8Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&amp;skuId=127687&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:150115,&quot;name&quot;:&quot;Energizer - MAX Batteries AA (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:4.99,&quot;upc&quot;:&quot;039800011329&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E91BP-4&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&amp;skuId=150115&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:185230,&quot;name&quot;:&quot;Duracell - C Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:8.99,&quot;upc&quot;:&quot;041333440019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1400R4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&amp;skuId=185230&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:185267,&quot;name&quot;:&quot;Duracell - D Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:9.99,&quot;upc&quot;:&quot;041333430010&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1300R4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&amp;skuId=185267&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:309062,&quot;name&quot;:&quot;Pioneer - 4\&quot; 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:144.99,&quot;upc&quot;:&quot;012562165141&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;80W maximum power (20W RMS); 4\&quot; IMPP composite cone woofer; 3/4\&quot; horn tweeter&quot;,&quot;manufacturer&quot;:&quot;Pioneer&quot;,&quot;model&quot;:&quot;TS-X200&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&amp;skuId=309062&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0300000&quot;,&quot;name&quot;:&quot;Car Electronics &amp; GPS&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0302000&quot;,&quot;name&quot;:&quot;Car Audio&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0302005&quot;,&quot;name&quot;:&quot;Car Speakers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat360500050015&quot;,&quot;name&quot;:&quot;4\&quot; Car Speakers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:312290,&quot;name&quot;:&quot;Duracell - 9V Batteries (2-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.99,&quot;upc&quot;:&quot;041333216010&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1604B2Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&amp;skuId=312290&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:333179,&quot;name&quot;:&quot;Energizer - N Cell E90 Batteries (2-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.99,&quot;upc&quot;:&quot;039800013200&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Alkaline batteries; 1.5V&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E90BP-2&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&amp;skuId=333179&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208006&quot;,&quot;name&quot;:&quot;Specialty Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:346575,&quot;name&quot;:&quot;Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln &amp; Mercury Vehicles - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:16.99,&quot;upc&quot;:&quot;086429002757&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket&quot;,&quot;manufacturer&quot;:&quot;Metra&quot;,&quot;model&quot;:&quot;99-5512&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&amp;skuId=346575&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0300000&quot;,&quot;name&quot;:&quot;Car Electronics &amp; GPS&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050023&quot;,&quot;name&quot;:&quot;Car Installation Parts &amp; Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050031&quot;,&quot;name&quot;:&quot;Deck Installation Parts&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050033&quot;,&quot;name&quot;:&quot;Dash Installation Kits&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat331600050007&quot;,&quot;name&quot;:&quot;Car Audio Installation Parts&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.limit == 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">161</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.skip != 5</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].name == &quot;Duracell - AAA Batteries (4-Pack)&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].name contains &quot;Duracell&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0] contains deep { &quot;name&quot;: &quot;Duracell - AAA Batteries (4-Pack)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains deep {&quot;data&quot; : [{&quot;name&quot;: &quot;Duracell - AAA Batteries (4-Pack)&quot;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match header Content-Type == &quot;application/json; charset=utf-8&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.total == &quot;#present&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.total == &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &quot;#array&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &quot;#[10]&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == &quot;#notpresent&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:25]</span>
+                <span class="scenario-name">Get products from best buy product list and add limit</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>855</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:41:57.186 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def limit = 4</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param $limit = limit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">827</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">20:41:57.243 request:
+1 &gt; GET http://localhost:3030/products?%24limit=4
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:41:58.034 response time in milliseconds: 790
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;115e-geOTyiiLgpMLYPeKxJ6tS3hAbBE&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:58 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;total&quot;:52160,&quot;limit&quot;:4,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:48530,&quot;name&quot;:&quot;Duracell - AA 1.5V CopperTop Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333415017&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&amp;skuId=48530&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:127687,&quot;name&quot;:&quot;Duracell - AA Batteries (8-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.49,&quot;upc&quot;:&quot;041333825014&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B8Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&amp;skuId=127687&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:150115,&quot;name&quot;:&quot;Energizer - MAX Batteries AA (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:4.99,&quot;upc&quot;:&quot;039800011329&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E91BP-4&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&amp;skuId=150115&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.limit == limit</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data == &quot;#[4]&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:33]</span>
+                <span class="scenario-name">Get one particular product from the list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>67</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:41:58.081 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def productId = 43900</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path productId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">20:41:58.101 request:
+1 &gt; GET http://localhost:3030/products/43900
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:41:58.138 response time in milliseconds: 34
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;448-HK+7FOWwXWiupzaUDo7jVkmRXqo&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:58 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == productId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:40]</span>
+                <span class="scenario-name">Add product to the product list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>409</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:41:58.185 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def name = &quot;Samsung Mobile&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.42">{
+&quot;name&quot;: &quot;#(name)&quot;,
+&quot;type&quot;: &quot;Mobile&quot;,
+&quot;price&quot;: 3000,
+&quot;shipping&quot;: 50,
+&quot;upc&quot;: &quot;Best&quot;,
+&quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+&quot;manufacturer&quot;: &quot;Samsung&quot;,
+&quot;model&quot;: &quot;S53&quot;,
+&quot;url&quot;: &quot;https://abc.com&quot;,
+&quot;image&quot;: &quot;string&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">395</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">20:41:58.508 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 197
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:58.594 response time in milliseconds: 85
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 286
+1 &lt; ETag: W/&quot;11e-nmI7qhf5zMi58JRujSNbUkqGKaE&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:58 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999889,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:58.558Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:58.558Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:62]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:62]</span>
+                <span class="scenario-name">Add product to the product list via json file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>132</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:62]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:41:58.628 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;../testData/product.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">116</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65">20:41:58.649 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 189
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:58.757 response time in milliseconds: 106
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 278
+1 &lt; ETag: W/&quot;116-N0pZ+swDfKd/IKsufhuv4HUu674&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:58 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999890,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:58.669Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:58.669Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Iphone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:69]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:69]</span>
+                <span class="scenario-name">Add product to the product list via json file and send another get request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>324</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:69]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:41:58.804 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = read(&quot;../testData/product.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request payload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">175</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.72">20:41:58.833 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 189
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:58.995 response time in milliseconds: 161
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 278
+1 &lt; ETag: W/&quot;116-ZVH9G0PFTxnxuT+e200iZ4jKXdA&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:58 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999891,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:58.854Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:58.854Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Iphone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def productId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products/&quot; + productId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">100</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.77">20:41:59.046 request:
+2 &gt; GET http://localhost:3030/products/9999891
+2 &gt; Host: localhost:3030
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+20:41:59.136 response time in milliseconds: 88
+2 &lt; 200
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+2 &lt; Vary: Accept, Accept-Encoding
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 294
+2 &lt; ETag: W/&quot;126-55g2kzZo69p3YQRDQAcYxl1PNlo&quot;
+2 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+2 &lt; Connection: keep-alive
+{&quot;id&quot;:9999891,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;upc&quot;:&quot;Best&quot;,&quot;shipping&quot;:50,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:58.854Z&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:58.854Z&quot;,&quot;categories&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;Iphone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == productId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7.1:105]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7.1:105]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>80</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7.1:105]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7.1:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">20:41:59.191 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[7.1:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7.1:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.84">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">72</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.99">20:41:59.208 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 196
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:59.268 response time in milliseconds: 59
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 285
+1 &lt; ETag: W/&quot;11d-u7m1Ee1KtWQsb4+oZTRI0Xc2smU&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999892,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:59.235Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:59.235Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Samsung Mobile&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7.2:106]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7.2:106]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>93</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7.2:106]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7.2:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">20:41:59.312 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[7.2:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7.2:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.84">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">77</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.99">20:41:59.338 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 216
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:59.396 response time in milliseconds: 56
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+1 &lt; Connection: keep-alive
+{&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;&#39;upc&#39; should NOT be longer than 15 characters&quot;]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.101">
+      <div class="step-ref failed">101</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;IPhone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.101">20:41:59.416 classpath:bestBuy/product/productApiTest.feature:101
+Then match response.name == &quot;IPhone&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;BadRequest&#39;
+  &#39;IPhone&#39;
+
+classpath:bestBuy/product/productApiTest.feature:101
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7.3:107]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7.3:107]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>64</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7.3:107]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7.3:107]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">20:41:59.471 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[7.3:107]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7.3:107]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.84">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.99">20:41:59.487 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:59.535 response time in milliseconds: 47
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 277
+1 &lt; ETag: W/&quot;115-h6aIW6VmKZnQ4PkXbpQTQnGgbbE&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999893,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:59.508Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:59.508Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Iphone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.1:130]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.1:130]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data via csv file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>72</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.1:130]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.1:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">20:41:59.651 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.1:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.1:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.110">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.125">20:41:59.670 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 196
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:59.724 response time in milliseconds: 53
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 285
+1 &lt; ETag: W/&quot;11d-lZB7cEJelnDpr4POcbV5FjTPfsU&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999894,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:59.690Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:59.690Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Samsung Mobile&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.2:130]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.2:130]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data via csv file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>69</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.2:130]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.2:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">20:41:59.756 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.2:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.2:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.110">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">61</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.125">20:41:59.776 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 217
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf &quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:59.821 response time in milliseconds: 44
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+1 &lt; Connection: keep-alive
+{&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;&#39;upc&#39; should NOT be longer than 15 characters&quot;]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.127">
+      <div class="step-ref failed">127</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;IPhone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.127">20:41:59.836 classpath:bestBuy/product/productApiTest.feature:127
+Then match response.name == &quot;IPhone&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;BadRequest&#39;
+  &#39;IPhone&#39;
+
+classpath:bestBuy/product/productApiTest.feature:127
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.3:130]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.3:130]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data via csv file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>60</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.3:130]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.3:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">20:41:59.864 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.3:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.3:130]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.110">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">53</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.125">20:41:59.881 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:41:59.926 response time in milliseconds: 45
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 277
+1 &lt; ETag: W/&quot;115-YH7vKXjuEnG0Ub4ojSPr1AUl1Uo&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:11:59 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999895,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:11:59.901Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:11:59.901Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Iphone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9.1:154]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9.1:154]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data via csv file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>86</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9.1:154]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9.1:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">20:41:59.983 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[9.1:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9.1:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.133">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.148">20:42:00.014 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 196
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:42:00.067 response time in milliseconds: 53
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 285
+1 &lt; ETag: W/&quot;11d-tkuKzSRYdecHQZ5rCe+FxBR0kEA&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:12:00 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999896,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:12:00.038Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:12:00.038Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Samsung Mobile&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9.2:154]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9.2:154]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data via csv file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>86</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9.2:154]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9.2:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">20:42:00.095 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[9.2:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9.2:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.133">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">57</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.148">20:42:00.131 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 217
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf &quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:42:00.181 response time in milliseconds: 49
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Thu, 02 Sep 2021 15:12:00 GMT
+1 &lt; Connection: keep-alive
+{&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;&#39;upc&#39; should NOT be longer than 15 characters&quot;]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.150">
+      <div class="step-ref failed">150</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;IPhone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.150">20:42:00.187 classpath:bestBuy/product/productApiTest.feature:150
+Then match response.name == &quot;IPhone&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;BadRequest&#39;
+  &#39;IPhone&#39;
+
+classpath:bestBuy/product/productApiTest.feature:150
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9.3:154]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9.3:154]</span>
+                <span class="scenario-name">Verify add product api with multiple set of test data via csv file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>91</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9.3:154]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9.3:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;http://localhost:3030&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.5">20:42:00.213 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[9.3:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;products&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9.3:154]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = read(&quot;../testData/testData.csv&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.133">{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">81</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.148">20:42:00.233 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+20:42:00.306 response time in milliseconds: 72
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 277
+1 &lt; ETag: W/&quot;115-3P/AygsYtFMdMntY+PXP8KWg9RQ&quot;
+1 &lt; Date: Thu, 02 Sep 2021 15:12:00 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:9999897,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-02T15:12:00.264Z&quot;,&quot;createdAt&quot;:&quot;2021-09-02T15:12:00.264Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.name == &quot;Iphone&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

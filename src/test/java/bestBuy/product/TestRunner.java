@@ -7,7 +7,7 @@ public class TestRunner {
 
 	@Test
 	public Karate runTest() {
-		return	Karate.run("productApiTest").relativeTo(getClass());
+		return	Karate.run("productApiTest", "productApiTest2").tags("~Ignore").relativeTo(getClass());
 	}
 	
 }

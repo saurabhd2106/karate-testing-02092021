@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-5","id":2},{"content":"pool-1-thread-2","id":3},{"content":"pool-1-thread-3","id":4},{"content":"pool-1-thread-4","id":5}];
+var items = [{"id":1,"group":1,"content":"bestBuy\/product\/postProductRequest[1:2]","start":1630665893114,"end":1630665893645,"title":"bestBuy\/product\/postProductRequest[1:2] 16:14:53.114-16:14:53.645","className":"failed"},{"id":2,"group":2,"content":"bestBuy\/product\/productApiTest2[1:8]","start":1630665897738,"end":1630665897891,"title":"bestBuy\/product\/productApiTest2[1:8] 16:14:57.738-16:14:57.891 Update product via PUT"},{"id":3,"group":1,"content":"bestBuy\/product\/productApiTest2[2:34]","start":1630665897761,"end":1630665897944,"title":"bestBuy\/product\/productApiTest2[2:34] 16:14:57.761-16:14:57.944 Delete a product"},{"id":4,"group":3,"content":"bestBuy\/product\/productApiTest[1:10]","start":1630665893114,"end":1630665897568,"title":"bestBuy\/product\/productApiTest[1:10] 16:14:53.114-16:14:57.568 Get all products from best buy product list"},{"id":5,"group":4,"content":"bestBuy\/product\/productApiTest[2:26]","start":1630665893114,"end":1630665897561,"title":"bestBuy\/product\/productApiTest[2:26] 16:14:53.114-16:14:57.561 Get products from best buy product list and add limit"},{"id":6,"group":5,"content":"bestBuy\/product\/productApiTest[3:35]","start":1630665893114,"end":1630665897545,"title":"bestBuy\/product\/productApiTest[3:35] 16:14:53.114-16:14:57.545 Get one particular product from the list"},{"id":7,"group":2,"content":"bestBuy\/product\/productApiTest[4:63]","start":1630665893114,"end":1630665895210,"title":"bestBuy\/product\/productApiTest[4:63] 16:14:53.114-16:14:55.210 Add product to the product list"},{"id":8,"group":1,"content":"bestBuy\/product\/productApiTest[5:86]","start":1630665893660,"end":1630665897565,"title":"bestBuy\/product\/productApiTest[5:86] 16:14:53.660-16:14:57.565 Add product to the product list via json file"},{"id":9,"group":2,"content":"bestBuy\/product\/productApiTest[6:93]","start":1630665895220,"end":1630665897729,"title":"bestBuy\/product\/productApiTest[6:93] 16:14:55.220-16:14:57.729 Add product to the product list via json file and send another get request"},{"id":10,"group":5,"content":"bestBuy\/product\/productApiTest[7.1:129]","start":1630665897558,"end":1630665897663,"title":"bestBuy\/product\/productApiTest[7.1:129] 16:14:57.558-16:14:57.663 Verify add product api with multiple set of test data"},{"id":11,"group":4,"content":"bestBuy\/product\/productApiTest[7.2:130]","start":1630665897571,"end":1630665897622,"title":"bestBuy\/product\/productApiTest[7.2:130] 16:14:57.571-16:14:57.622 Verify add product api with multiple set of test data","className":"failed"},{"id":12,"group":1,"content":"bestBuy\/product\/productApiTest[7.3:131]","start":1630665897576,"end":1630665897706,"title":"bestBuy\/product\/productApiTest[7.3:131] 16:14:57.576-16:14:57.706 Verify add product api with multiple set of test data"},{"id":13,"group":3,"content":"bestBuy\/product\/productApiTest[8.1:154]","start":1630665897579,"end":1630665897724,"title":"bestBuy\/product\/productApiTest[8.1:154] 16:14:57.579-16:14:57.724 Verify add product api with multiple set of test data via csv file"},{"id":14,"group":4,"content":"bestBuy\/product\/productApiTest[8.2:154]","start":1630665897631,"end":1630665897682,"title":"bestBuy\/product\/productApiTest[8.2:154] 16:14:57.631-16:14:57.682 Verify add product api with multiple set of test data via csv file","className":"failed"},{"id":15,"group":5,"content":"bestBuy\/product\/productApiTest[8.3:154]","start":1630665897673,"end":1630665897756,"title":"bestBuy\/product\/productApiTest[8.3:154] 16:14:57.673-16:14:57.756 Verify add product api with multiple set of test data via csv file"},{"id":16,"group":4,"content":"bestBuy\/product\/productApiTest[9.1:179]","start":1630665897693,"end":1630665897791,"title":"bestBuy\/product\/productApiTest[9.1:179] 16:14:57.693-16:14:57.791 Verify add product api with multiple set of test data via csv file"},{"id":17,"group":1,"content":"bestBuy\/product\/productApiTest[9.2:179]","start":1630665897714,"end":1630665897752,"title":"bestBuy\/product\/productApiTest[9.2:179] 16:14:57.714-16:14:57.752 Verify add product api with multiple set of test data via csv file","className":"failed"},{"id":18,"group":3,"content":"bestBuy\/product\/productApiTest[9.3:179]","start":1630665897735,"end":1630665897817,"title":"bestBuy\/product\/productApiTest[9.3:179] 16:14:57.735-16:14:57.817 Verify add product api with multiple set of test data via csv file"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

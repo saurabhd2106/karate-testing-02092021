@@ -1,0 +1,6342 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: bestBuy/product/productApiTest.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Karate Framework - Best Buy Report</td>
+      <td>03 Sep 2021, 16:36</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">bestBuy/product/productApiTest.feature</td>
+          <td      class="passed"    >126</td>
+          <td      class="failed"    >3</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">129</td>
+
+          <td  class="passed"    >12</td>
+          <td  class="failed"    >3</td>
+          <td class="total">15</td>
+
+          <td class="duration" data-value="22438155600">22.438</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">bestBuy/product/productApiTest.feature</span>
+
+
+</div>
+
+        <div class="description indention">Verify CRUD operations for product API
+This feature fike will verify all crud operation for product API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.129</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:36:15.096 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.124</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">3.945</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all products from best buy product list</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">3.920</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:36:16.214 request:
+1 &gt; GET http://localhost:3030/products
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:36:19.233 response time in milliseconds: 3018
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;2caa-Pp4J0ikhtUhJ6MbkiE3MjijdjaE&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;total&quot;:52441,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:48530,&quot;name&quot;:&quot;Duracell - AA 1.5V CopperTop Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333415017&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&amp;skuId=48530&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:127687,&quot;name&quot;:&quot;Duracell - AA Batteries (8-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.49,&quot;upc&quot;:&quot;041333825014&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B8Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&amp;skuId=127687&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:150115,&quot;name&quot;:&quot;Energizer - MAX Batteries AA (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:4.99,&quot;upc&quot;:&quot;039800011329&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E91BP-4&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&amp;skuId=150115&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:185230,&quot;name&quot;:&quot;Duracell - C Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:8.99,&quot;upc&quot;:&quot;041333440019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1400R4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&amp;skuId=185230&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:185267,&quot;name&quot;:&quot;Duracell - D Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:9.99,&quot;upc&quot;:&quot;041333430010&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1300R4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&amp;skuId=185267&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:309062,&quot;name&quot;:&quot;Pioneer - 4\&quot; 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:144.99,&quot;upc&quot;:&quot;012562165141&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;80W maximum power (20W RMS); 4\&quot; IMPP composite cone woofer; 3/4\&quot; horn tweeter&quot;,&quot;manufacturer&quot;:&quot;Pioneer&quot;,&quot;model&quot;:&quot;TS-X200&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&amp;skuId=309062&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0300000&quot;,&quot;name&quot;:&quot;Car Electronics &amp; GPS&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0302000&quot;,&quot;name&quot;:&quot;Car Audio&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0302005&quot;,&quot;name&quot;:&quot;Car Speakers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat360500050015&quot;,&quot;name&quot;:&quot;4\&quot; Car Speakers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:312290,&quot;name&quot;:&quot;Duracell - 9V Batteries (2-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.99,&quot;upc&quot;:&quot;041333216010&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1604B2Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&amp;skuId=312290&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:333179,&quot;name&quot;:&quot;Energizer - N Cell E90 Batteries (2-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.99,&quot;upc&quot;:&quot;039800013200&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Alkaline batteries; 1.5V&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E90BP-2&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&amp;skuId=333179&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208006&quot;,&quot;name&quot;:&quot;Specialty Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:346575,&quot;name&quot;:&quot;Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln &amp; Mercury Vehicles - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:16.99,&quot;upc&quot;:&quot;086429002757&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket&quot;,&quot;manufacturer&quot;:&quot;Metra&quot;,&quot;model&quot;:&quot;99-5512&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&amp;skuId=346575&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0300000&quot;,&quot;name&quot;:&quot;Car Electronics &amp; GPS&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050023&quot;,&quot;name&quot;:&quot;Car Installation Parts &amp; Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050031&quot;,&quot;name&quot;:&quot;Deck Installation Parts&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat165900050033&quot;,&quot;name&quot;:&quot;Dash Installation Kits&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat331600050007&quot;,&quot;name&quot;:&quot;Car Audio Installation Parts&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.limit == 10</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.skip != 5</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[0].name == &quot;Duracell - AAA Batteries (4-Pack)&quot;</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[0].name contains &quot;Duracell&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data[0] contains deep { &quot;name&quot;: &quot;Duracell - AAA Batteries (4-Pack)&quot;}</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains deep {&quot;data&quot; : [{&quot;name&quot;: &quot;Duracell - AAA Batteries (4-Pack)&quot;}]}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Content-Type == &quot;application/json; charset=utf-8&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.total == &quot;#present&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.total == &quot;#number&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data == &quot;#array&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data == &quot;#[10]&quot;</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.id == &quot;#notpresent&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.120</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:36:15.094 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.116</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.887</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get products from best buy product list and add limit</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def limit = 4</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param $limit = limit</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">3.874</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>16:36:16.211 request:
+1 &gt; GET http://localhost:3030/products?%24limit=4
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:36:19.194 response time in milliseconds: 2982
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;115e-o7cMhxTtUdxu4TrX3UT5DUACsB0&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;total&quot;:52441,&quot;limit&quot;:4,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:48530,&quot;name&quot;:&quot;Duracell - AA 1.5V CopperTop Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333415017&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&amp;skuId=48530&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:127687,&quot;name&quot;:&quot;Duracell - AA Batteries (8-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:7.49,&quot;upc&quot;:&quot;041333825014&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN1500B8Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&amp;skuId=127687&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:150115,&quot;name&quot;:&quot;Energizer - MAX Batteries AA (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:4.99,&quot;upc&quot;:&quot;039800011329&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;,&quot;manufacturer&quot;:&quot;Energizer&quot;,&quot;model&quot;:&quot;E91BP-4&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&amp;skuId=150115&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.limit == limit</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data == &quot;#[4]&quot;</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.125</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>16:36:15.095 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.121</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">3.893</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get one particular product from the list</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def productId = 43900</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path productId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">3.871</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>16:36:16.211 request:
+1 &gt; GET http://localhost:3030/products/43900
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:36:19.190 response time in milliseconds: 2979
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; ETag: W/&quot;448-HK+7FOWwXWiupzaUDo7jVkmRXqo&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:43900,&quot;name&quot;:&quot;Duracell - AAA Batteries (4-Pack)&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:5.49,&quot;upc&quot;:&quot;041333424019&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;,&quot;manufacturer&quot;:&quot;Duracell&quot;,&quot;model&quot;:&quot;MN2400B4Z&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&amp;skuId=43900&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0208002&quot;,&quot;name&quot;:&quot;Alkaline Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat248700050021&quot;,&quot;name&quot;:&quot;Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat303600050001&quot;,&quot;name&quot;:&quot;Household Batteries&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat312300050015&quot;,&quot;name&quot;:&quot;Connected Home &amp; Housewares&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.id == productId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def categories = {&quot;id&quot;: &quot;#string&quot;, &quot;name&quot; : &quot;#string&quot;, &quot;createdAt&quot; : &quot;#string&quot;, &quot;updatedAt&quot; : &quot;#string&quot;}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>{
+      
+&quot;id&quot;: &quot;#number&quot;,
+    &quot;name&quot;: &quot;#string&quot;,
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;price&quot;: &quot;#number&quot;,
+    &quot;upc&quot;: &quot;#string&quot;,
+    &quot;shipping&quot;: &quot;#number&quot;,
+    &quot;description&quot;: &quot;#string&quot;,
+    &quot;manufacturer&quot;: &quot;#string&quot;,
+    &quot;model&quot;: &quot;#string&quot;,
+    &quot;url&quot;: &quot;#string&quot;,
+    &quot;image&quot;: &quot;#string&quot;,
+    &quot;createdAt&quot;: &quot;#string&quot;,
+    &quot;updatedAt&quot;: &quot;#string&quot;,
+&quot;categories&quot; : &quot;#[] ##(categories)&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.125</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>16:36:15.094 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.121</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.925</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add product to the product list</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def name = &quot;Samsung Mobile&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>{
+&quot;name&quot;: &quot;#(name)&quot;,
+&quot;type&quot;: &quot;Mobile&quot;,
+&quot;price&quot;: 3000,
+&quot;shipping&quot;: 50,
+&quot;upc&quot;: &quot;Best&quot;,
+&quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+&quot;manufacturer&quot;: &quot;Samsung&quot;,
+&quot;model&quot;: &quot;S53&quot;,
+&quot;url&quot;: &quot;https://abc.com&quot;,
+&quot;image&quot;: &quot;string&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">3.850</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>16:36:16.212 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 197
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.236 response time in milliseconds: 3023
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 287
+1 &lt; ETag: W/&quot;11f-7OJmeHlYzHlavIXJMU3rb944dPM&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000180,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:16.293Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:16.293Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == name</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.072</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>16:36:15.238 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.070</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1287359789.html">@Sanity</a>
+</div>
+
+
+  <span class="lead-duration duration">1.054</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-30">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add product to the product list via json file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-30" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def payload = read(&quot;../testData/product.json&quot;)</span>
+
+  <span class="lead-duration duration">0.071</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.955</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>16:36:16.212 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 189
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:16.339 response time in milliseconds: 122
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 279
+1 &lt; ETag: W/&quot;117-45zYgCVQAr9B0FRamf5ERje8pls&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:16 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000179,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:16.279Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:16.279Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Iphone&quot;</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>16:36:16.392 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.400</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add product to the product list via json file and send another get request</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def payload = read(&quot;../testData/product.json&quot;)</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request payload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">2.973</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>16:36:16.411 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 189
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.379 response time in milliseconds: 2967
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 279
+1 &lt; ETag: W/&quot;117-pH2cH/cmbf7pgUckK5eP+pnKpk0&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000181,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;Best&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:16.428Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:16.428Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Iphone&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def productId = response.id</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products/&quot; + productId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.415</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>16:36:19.390 request:
+2 &gt; GET http://localhost:3030/products/10000181
+2 &gt; Host: localhost:3030
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:36:19.799 response time in milliseconds: 408
+2 &lt; 200
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+2 &lt; Vary: Accept, Accept-Encoding
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 295
+2 &lt; ETag: W/&quot;127-EfcGqq3OEUUR2UvHu1gFaJMuK0w&quot;
+2 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+2 &lt; Connection: keep-alive
+{&quot;id&quot;:10000181,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;upc&quot;:&quot;Best&quot;,&quot;shipping&quot;:50,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:16.428Z&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:16.428Z&quot;,&quot;categories&quot;:[]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.name == &quot;Iphone&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.id == productId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.004</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-40" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>16:36:19.218 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.220</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.215</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>16:36:19.230 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 196
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.441 response time in milliseconds: 209
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 286
+1 &lt; ETag: W/&quot;11e-FthD3Q3I9/IvlP1nnkgk7V+XOZ0&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000182,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:19.284Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:19.284Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Samsung Mobile&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-47" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-48" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-49">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details">
+        <pre>16:36:19.223 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.114</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-50">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-50" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-51">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-51" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.110</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>16:36:19.236 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 216
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.342 response time in milliseconds: 105
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;'upc' should NOT be longer than 15 characters&quot;]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;IPhone&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-54">
+          <a>match</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:125</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>16:36:19.346 classpath:bestBuy/product/productApiTest.feature:125
+Then match response.name == &quot;IPhone&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:125
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.004</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-56">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-56" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-57">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-57" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>16:36:19.255 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.244</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-59">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-59" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-60">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-60" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-61" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.239</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-62">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-62" class="collapse collapsable-details">
+        <pre>16:36:19.270 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.502 response time in milliseconds: 231
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 278
+1 &lt; ETag: W/&quot;116-/tP5A23tpHc9DggwsW4ubbfTx9g&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000183,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:19.369Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:19.369Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Iphone&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-63">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-63" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-64">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-64" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-65">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details">
+        <pre>16:36:19.280 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.236</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-66">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data via csv file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-66" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-67">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-67" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-68">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-68" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.230</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-69">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-69" class="collapse collapsable-details">
+        <pre>16:36:19.294 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 196
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.519 response time in milliseconds: 224
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 286
+1 &lt; ETag: W/&quot;11e-z+9OSjNCeIEhk2ahEUPuyT+hIv4&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000184,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:19.394Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:19.394Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Samsung Mobile&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-70">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-70" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-71">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-71" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-72">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details">
+        <pre>16:36:19.357 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.063</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-73">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data via csv file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-73" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-74">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-74" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-75">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-75" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-76" class="collapse collapsable-details">
+        <pre>16:36:19.365 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 217
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf &quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.421 response time in milliseconds: 55
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;'upc' should NOT be longer than 15 characters&quot;]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;IPhone&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-77">
+          <a>match</a>
+      </div>
+      <div id="msg-77" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:151</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-78">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-78" class="collapse collapsable-details">
+        <pre>16:36:19.425 classpath:bestBuy/product/productApiTest.feature:151
+Then match response.name == &quot;IPhone&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:151
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-79">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-79" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-80">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-80" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-81">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-81" class="collapse collapsable-details">
+        <pre>16:36:19.439 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.162</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-82">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data via csv file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-82" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-83">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-83" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-84">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-84" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.159</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-85" class="collapse collapsable-details">
+        <pre>16:36:19.448 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.602 response time in milliseconds: 153
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 278
+1 &lt; ETag: W/&quot;116-kCz5e1n70s+oyYACiAwYE0yqQAU&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000185,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:19.473Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:19.473Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Iphone&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-86">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-86" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-87">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-87" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-88" class="collapse collapsable-details">
+        <pre>16:36:19.459 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1006615089.html">@Ignore</a>
+</div>
+
+
+  <span class="lead-duration duration">0.328</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-89">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data via csv file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-89" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-90">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-90" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-91">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-91" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.326</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-92">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-92" class="collapse collapsable-details">
+        <pre>16:36:19.469 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 196
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.789 response time in milliseconds: 319
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 286
+1 &lt; ETag: W/&quot;11e-ZA4PtmMX2JH6JJrUXEighPBOTD8&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000186,&quot;name&quot;:&quot;Samsung Mobile&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;ABC&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:19.496Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:19.496Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Samsung Mobile&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.003</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-93">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-93" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-94">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-94" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-95">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-95" class="collapse collapsable-details">
+        <pre>16:36:19.522 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1006615089.html">@Ignore</a>
+</div>
+
+
+  <span class="lead-duration duration">0.054</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-96">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data via csv file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-96" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-97">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-97" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-98">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-98" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-99">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-99" class="collapse collapsable-details">
+        <pre>16:36:19.532 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 217
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf &quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.577 response time in milliseconds: 44
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 158
+1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;'upc' should NOT be longer than 15 characters&quot;]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;IPhone&quot;</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-100">
+          <a>match</a>
+      </div>
+      <div id="msg-100" class="collapse collapsable-details  in ">
+        <pre>match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:175</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-101">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-101" class="collapse collapsable-details">
+        <pre>16:36:19.582 classpath:bestBuy/product/productApiTest.feature:175
+Then match response.name == &quot;IPhone&quot;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:175
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-102">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-102" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-103">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-103" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://localhost:3030&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-104">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-104" class="collapse collapsable-details">
+        <pre>16:36:19.539 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;products&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = read(&quot;../testData/testData.csv&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1006615089.html">@Ignore</a>
+</div>
+
+
+  <span class="lead-duration duration">0.294</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-105">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify add product api with multiple set of test data via csv file</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-105" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-106">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-106" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-107">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-107" class="collapse collapsable-details">
+        <pre>{
+ &quot;name&quot;: &quot;#(name)&quot;,
+   &quot;type&quot;: &quot;Mobile&quot;,
+   &quot;price&quot;: 3000,
+   &quot;shipping&quot;: 50,
+   &quot;upc&quot;: &quot;#(upcValue)&quot;,
+   &quot;description&quot;: &quot;Samsung Mobile 53&quot;,
+   &quot;manufacturer&quot;: &quot;Samsung&quot;,
+   &quot;model&quot;: &quot;S53&quot;,
+   &quot;url&quot;: &quot;https://abc.com&quot;,
+   &quot;image&quot;: &quot;string&quot;
+   }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.290</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-108">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-108" class="collapse collapsable-details">
+        <pre>16:36:19.550 request:
+1 &gt; POST http://localhost:3030/products
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: localhost:3030
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
+
+16:36:19.834 response time in milliseconds: 283
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 278
+1 &lt; ETag: W/&quot;116-tsVRosQzqajS1XxazsGrwqFvlcU&quot;
+1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10000187,&quot;name&quot;:&quot;Iphone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;BCD&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https://abc.com&quot;,&quot;image&quot;:&quot;string&quot;,&quot;updatedAt&quot;:&quot;2021-09-03T11:06:19.592Z&quot;,&quot;createdAt&quot;:&quot;2021-09-03T11:06:19.592Z&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.name == &quot;Iphone&quot;</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

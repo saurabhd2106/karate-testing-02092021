@@ -6,6 +6,7 @@ Feature: Verify CRUD operations for product API
     And path "products"
     * def testData = read("../testData/testData.csv")
 
+  @Sanity
   Scenario: Get all products from best buy product list
     When method get
     Then status 200
@@ -30,12 +31,34 @@ Feature: Verify CRUD operations for product API
     And match response.limit == limit
     And match response.data == "#[4]"
 
+  @Sanity
   Scenario: Get one particular product from the list
     * def productId = 43900
     And path productId
     When method get
     Then status 200
     And match response.id == productId
+    * def categories = {"id": "#string", "name" : "#string", "createdAt" : "#string", "updatedAt" : "#string"}
+    And match response ==
+      """
+      {
+      
+      "id": "#number",
+          "name": "#string",
+          "type": "#string",
+          "price": "#number",
+          "upc": "#string",
+          "shipping": "#number",
+          "description": "#string",
+          "manufacturer": "#string",
+          "model": "#string",
+          "url": "#string",
+          "image": "#string",
+          "createdAt": "#string",
+          "updatedAt": "#string",
+      "categories" : "#[] ##(categories)"
+      }
+      """
 
   Scenario: Add product to the product list
     * def name = "Samsung Mobile"
@@ -59,6 +82,7 @@ Feature: Verify CRUD operations for product API
     Then status 201
     Then match response.name == name
 
+  @Sanity
   Scenario: Add product to the product list via json file
     * def payload = read("../testData/product.json")
     Given request payload
@@ -129,6 +153,7 @@ Feature: Verify CRUD operations for product API
     Examples: 
       | testData |
 
+  @Ignore
   Scenario Outline: Verify add product api with multiple set of test data via csv file
     Given request
       """
@@ -151,4 +176,4 @@ Feature: Verify CRUD operations for product API
 
     Examples: 
       #| testData |
-       | read("../testData/testData.csv") |
+      | read("../testData/testData.csv") |

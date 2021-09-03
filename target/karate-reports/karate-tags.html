@@ -22,15 +22,15 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Tags</div>
   </div>         
   <div id="nav-date">
-    <div>2021-09-02 08:17:42 pm</div>
+    <div>2021-09-03 04:36:21 pm</div>
   </div>        
 </div>
 
@@ -43,15 +43,35 @@
           <thead>
             <tr>
               <th class="feature-cell">Feature</th>
-              
+              <th classapend="failed">Ignore</th>
+              <th classapend="passed">Regression</th>
+              <th classapend="passed">Sanity</th>
             </tr>
           </thead>
           <tbody>
             <tr class="failed">
               <td class="feature-cell">
+                <a href="bestBuy.product.postProductRequest.html">bestBuy/product/postProductRequest.feature</a>
+              </td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+              <td classapend="passed"></td>
+            </tr>
+            <tr class="passed">
+              <td class="feature-cell">
+                <a href="bestBuy.product.productApiTest2.html">bestBuy/product/productApiTest2.feature</a>
+              </td>
+              <td classapend="passed">X</td>
+              <td classapend="passed">X</td>
+              <td classapend="passed">X</td>
+            </tr>
+            <tr class="failed">
+              <td class="feature-cell">
                 <a href="bestBuy.product.productApiTest.html">bestBuy/product/productApiTest.feature</a>
               </td>
-              
+              <td classapend="failed">X</td>
+              <td classapend="passed"></td>
+              <td classapend="passed">X</td>
             </tr>            
           </tbody>
         </table>
