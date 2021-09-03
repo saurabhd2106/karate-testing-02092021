@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Karate Framework - Best Buy Report</td>
-      <td>03 Sep 2021, 16:36</td>
+      <td>03 Sep 2021, 19:24</td>
     </tr>
   </tbody>
 </table>
@@ -123,7 +123,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.074</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -166,7 +166,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url _url</span>
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.074</span>
 
 </div>
 
@@ -202,8 +202,8 @@ classpath:bestBuy/product/postProductRequest.feature:3</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>16:36:15.093 karate.env system property was: null 
-16:36:15.222 classpath:bestBuy/product/postProductRequest.feature:3
+        <pre>19:24:33.292 karate.env system property was: null 
+19:24:33.508 classpath:bestBuy/product/postProductRequest.feature:3
 Given url _url
 js failed:
 &gt;&gt;&gt;&gt;
@@ -458,7 +458,7 @@ classpath:bestBuy/product/postProductRequest.feature:3
 </div>
 
 
-  <span class="lead-duration duration">0.114</span>
+  <span class="lead-duration duration">0.090</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
@@ -549,7 +549,7 @@ classpath:bestBuy/product/postProductRequest.feature:3
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.110</span>
+  <span class="lead-duration duration">0.085</span>
 
 </div>
 
@@ -567,17 +567,17 @@ classpath:bestBuy/product/postProductRequest.feature:3
           <a>Doc string</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details">
-        <pre>16:36:19.236 request:
+        <pre>19:24:41.083 request:
 1 &gt; POST http://localhost:3030/products
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 216
 1 &gt; Host: localhost:3030
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf&quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
 
-16:36:19.342 response time in milliseconds: 105
+19:24:41.160 response time in milliseconds: 76
 1 &lt; 400
 1 &lt; X-Powered-By: Express
 1 &lt; Access-Control-Allow-Origin: *
@@ -586,7 +586,7 @@ classpath:bestBuy/product/postProductRequest.feature:3
 1 &lt; Content-Length: 158
 1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 &lt; Connection: keep-alive
 {&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;'upc' should NOT be longer than 15 characters&quot;]}
 </pre>
@@ -635,7 +635,7 @@ classpath:bestBuy/product/postProductRequest.feature:3
   <span class="keyword indention">Then</span>
   <span class="name">match response.name == &quot;IPhone&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -669,7 +669,7 @@ classpath:bestBuy/product/productApiTest.feature:125</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>16:36:19.346 classpath:bestBuy/product/productApiTest.feature:125
+        <pre>19:24:41.166 classpath:bestBuy/product/productApiTest.feature:125
 Then match response.name == &quot;IPhone&quot;
 match failed: EQUALS
   $ | not equal (STRING:STRING)
@@ -711,7 +711,7 @@ classpath:bestBuy/product/productApiTest.feature:125
 </div>
 
 
-  <span class="lead-duration duration">0.063</span>
+  <span class="lead-duration duration">0.089</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
@@ -754,7 +754,7 @@ classpath:bestBuy/product/productApiTest.feature:125
   <span class="keyword indention">Given</span>
   <span class="name">request</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.017</span>
 
 </div>
 
@@ -802,7 +802,7 @@ classpath:bestBuy/product/productApiTest.feature:125
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.061</span>
+  <span class="lead-duration duration">0.069</span>
 
 </div>
 
@@ -820,17 +820,17 @@ classpath:bestBuy/product/productApiTest.feature:125
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>16:36:19.365 request:
+        <pre>19:24:41.275 request:
 1 &gt; POST http://localhost:3030/products
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 217
 1 &gt; Host: localhost:3030
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf &quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
 
-16:36:19.421 response time in milliseconds: 55
+19:24:41.339 response time in milliseconds: 63
 1 &lt; 400
 1 &lt; X-Powered-By: Express
 1 &lt; Access-Control-Allow-Origin: *
@@ -839,7 +839,7 @@ classpath:bestBuy/product/productApiTest.feature:125
 1 &lt; Content-Length: 158
 1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 &lt; Connection: keep-alive
 {&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;'upc' should NOT be longer than 15 characters&quot;]}
 </pre>
@@ -922,7 +922,7 @@ classpath:bestBuy/product/productApiTest.feature:151</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-17" class="collapse collapsable-details">
-        <pre>16:36:19.425 classpath:bestBuy/product/productApiTest.feature:151
+        <pre>19:24:41.343 classpath:bestBuy/product/productApiTest.feature:151
 Then match response.name == &quot;IPhone&quot;
 match failed: EQUALS
   $ | not equal (STRING:STRING)
@@ -966,7 +966,7 @@ classpath:bestBuy/product/productApiTest.feature:151
 </div>
 
 
-  <span class="lead-duration duration">0.054</span>
+  <span class="lead-duration duration">0.042</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
@@ -1057,7 +1057,7 @@ classpath:bestBuy/product/productApiTest.feature:151
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.051</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -1075,17 +1075,17 @@ classpath:bestBuy/product/productApiTest.feature:151
           <a>Doc string</a>
       </div>
       <div id="msg-21" class="collapse collapsable-details">
-        <pre>16:36:19.532 request:
+        <pre>19:24:41.467 request:
 1 &gt; POST http://localhost:3030/products
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 217
 1 &gt; Host: localhost:3030
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;IPhone&quot;,&quot;type&quot;:&quot;Mobile&quot;,&quot;price&quot;:3000,&quot;shipping&quot;:50,&quot;upc&quot;:&quot;dhsfjsdgf sdgfhsgdf kdsgfdshsdf &quot;,&quot;description&quot;:&quot;Samsung Mobile 53&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;S53&quot;,&quot;url&quot;:&quot;https:\/\/abc.com&quot;,&quot;image&quot;:&quot;string&quot;}
 
-16:36:19.577 response time in milliseconds: 44
+19:24:41.502 response time in milliseconds: 33
 1 &lt; 400
 1 &lt; X-Powered-By: Express
 1 &lt; Access-Control-Allow-Origin: *
@@ -1094,7 +1094,7 @@ classpath:bestBuy/product/productApiTest.feature:151
 1 &lt; Content-Length: 158
 1 &lt; ETag: W/&quot;9e-YVgvNVa8nKanMADz5xfoFqZZN3w&quot;
 1 &lt; Vary: Accept-Encoding
-1 &lt; Date: Fri, 03 Sep 2021 11:06:19 GMT
+1 &lt; Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 &lt; Connection: keep-alive
 {&quot;name&quot;:&quot;BadRequest&quot;,&quot;message&quot;:&quot;Invalid Parameters&quot;,&quot;code&quot;:400,&quot;className&quot;:&quot;bad-request&quot;,&quot;data&quot;:{},&quot;errors&quot;:[&quot;'upc' should NOT be longer than 15 characters&quot;]}
 </pre>
@@ -1143,7 +1143,7 @@ classpath:bestBuy/product/productApiTest.feature:151
   <span class="keyword indention">Then</span>
   <span class="name">match response.name == &quot;IPhone&quot;</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1177,7 +1177,7 @@ classpath:bestBuy/product/productApiTest.feature:175</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-23" class="collapse collapsable-details">
-        <pre>16:36:19.582 classpath:bestBuy/product/productApiTest.feature:175
+        <pre>19:24:41.505 classpath:bestBuy/product/productApiTest.feature:175
 Then match response.name == &quot;IPhone&quot;
 match failed: EQUALS
   $ | not equal (STRING:STRING)

@@ -1,0 +1,22 @@
+<testsuite failures="1" name="bestBuy/product/postProductRequest.feature" skipped="0" tests="1" time="0.074099"><testcase classname="bestBuy.product.postProductRequest" name="[1:2] " time="0.074099"><failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: _url&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;_url&quot; is not defined&#10;- &lt;js&gt;.:program(Unnamed:1)&#10;&#10;classpath:bestBuy/product/postProductRequest.feature:3">Given url _url ............................................................ failed
+
+Stack Trace:
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: _url
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: "_url" is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:bestBuy/product/postProductRequest.feature:3&#13;
+	at &lt;feature&gt;.: Given url _url (classpath:bestBuy/product/postProductRequest.feature:3:3)&#13;
+
+And path _path ............................................................ skipped
+* def name = _name ........................................................ skipped
+Given request ............................................................. skipped
+When method post .......................................................... skipped
+Then status 201 ........................................................... skipped
+Then match response.name == name .......................................... skipped
+* def productId = response.id ............................................. skipped
+</failure></testcase>
+</testsuite>

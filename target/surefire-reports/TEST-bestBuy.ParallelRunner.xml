@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="bestBuy.ParallelRunner" time="12.958" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="bestBuy.ParallelRunner" time="25.177" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\test-classes;C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\classes;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\SAURABH\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\SAURABH\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\SAURABH\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\SAURABH\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\SAURABH\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\SAURABH\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\test-classes;C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\classes;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\SAURABH\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\SAURABH\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\SAURABH\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\SAURABH\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\SAURABH\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\SAURABH\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\SAURABH\.m2\repository\net\masterthought\cucumber-reporting\5.6.0\cucumber-reporting-5.6.0.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar;C:\Users\SAURABH\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\SAURABH\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SAURABH\.m2\repository\joda-time\joda-time\2.10.10\joda-time-2.10.10.jar;C:\Users\SAURABH\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SAURABH\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\SAURABH\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\SAURABH\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\SAURABH\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\SAURABH\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\SAURABH\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\SAURABH\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\SAURABH\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\SAURABH\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\SAURABH\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\SAURABH\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20200713.1\owasp-java-html-sanitizer-20200713.1.jar;C:\Users\SAURABH\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\SAURABH\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SAURABH\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,9 +18,9 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\SAURABH\AppData\Local\Temp\surefire3537302600364555539\surefirebooter7192119644350394517.jar C:\Users\SAURABH\AppData\Local\Temp\surefire3537302600364555539 2021-09-03T09-59-27_812-jvmRun1 surefire4727646206775410475tmp surefire_0519255161640710121tmp"/>
+    <property name="sun.java.command" value="C:\Users\SAURABH\AppData\Local\Temp\surefire1902140979215373098\surefirebooter2900112029732134097.jar C:\Users\SAURABH\AppData\Local\Temp\surefire1902140979215373098 2021-09-03T19-24-22_846-jvmRun1 surefire6954588019904176248tmp surefire_07532835706291358135tmp"/>
     <property name="test" value="ParallelRunner"/>
-    <property name="surefire.test.class.path" value="C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\test-classes;C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\classes;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\SAURABH\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\SAURABH\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\SAURABH\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\SAURABH\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\SAURABH\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\SAURABH\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\test-classes;C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\classes;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\SAURABH\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\SAURABH\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\SAURABH\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\SAURABH\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\SAURABH\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\SAURABH\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\SAURABH\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\SAURABH\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\SAURABH\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\SAURABH\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\SAURABH\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\SAURABH\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\SAURABH\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\SAURABH\.m2\repository\net\masterthought\cucumber-reporting\5.6.0\cucumber-reporting-5.6.0.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\SAURABH\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar;C:\Users\SAURABH\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\SAURABH\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\SAURABH\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SAURABH\.m2\repository\joda-time\joda-time\2.10.10\joda-time-2.10.10.jar;C:\Users\SAURABH\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SAURABH\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\SAURABH\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\SAURABH\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\SAURABH\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\SAURABH\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\SAURABH\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\SAURABH\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\SAURABH\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\SAURABH\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\SAURABH\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\SAURABH\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20200713.1\owasp-java-html-sanitizer-20200713.1.jar;C:\Users\SAURABH\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\SAURABH\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SAURABH\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\SAURABH"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\SAURABH\AppData\Local\Temp\surefire3537302600364555539\surefirebooter7192119644350394517.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SAURABH\AppData\Local\Temp\surefire1902140979215373098\surefirebooter2900112029732134097.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,54 +61,58 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="executeKarateTests" classname="bestBuy.ParallelRunner" time="12.929">
-    <failure message="match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;BadRequest&apos;&#10;  &apos;IPhone&apos;&#10;&#10;classpath:bestBuy/product/productApiTest.feature:103&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;BadRequest&apos;&#10;  &apos;IPhone&apos;&#10;&#10;classpath:bestBuy/product/productApiTest.feature:129&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;BadRequest&apos;&#10;  &apos;IPhone&apos;&#10;&#10;classpath:bestBuy/product/productApiTest.feature:152 ==&gt; expected: &lt;0&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+  <testcase name="executeKarateTests" classname="bestBuy.ParallelRunner" time="25.159">
+    <failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: _url&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;_url&quot; is not defined&#10;- &lt;js&gt;.:program(Unnamed:1)&#10;&#10;classpath:bestBuy/product/postProductRequest.feature:3&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;BadRequest&apos;&#10;  &apos;IPhone&apos;&#10;&#10;classpath:bestBuy/product/productApiTest.feature:125&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;BadRequest&apos;&#10;  &apos;IPhone&apos;&#10;&#10;classpath:bestBuy/product/productApiTest.feature:151&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;BadRequest&apos;&#10;  &apos;IPhone&apos;&#10;&#10;classpath:bestBuy/product/productApiTest.feature:175 ==&gt; expected: &lt;0&gt; but was: &lt;4&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: _url
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "_url" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:bestBuy/product/postProductRequest.feature:3
 match failed: EQUALS
   $ | not equal (STRING:STRING)
   'BadRequest'
   'IPhone'
 
-classpath:bestBuy/product/productApiTest.feature:103
+classpath:bestBuy/product/productApiTest.feature:125
 match failed: EQUALS
   $ | not equal (STRING:STRING)
   'BadRequest'
   'IPhone'
 
-classpath:bestBuy/product/productApiTest.feature:129
+classpath:bestBuy/product/productApiTest.feature:151
 match failed: EQUALS
   $ | not equal (STRING:STRING)
   'BadRequest'
   'IPhone'
 
-classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: <3>
-	at bestBuy.ParallelRunner.executeKarateTests(ParallelRunner.java:15)
+classpath:bestBuy/product/productApiTest.feature:175 ==> expected: <0> but was: <4>
+	at bestBuy.ParallelRunner.executeKarateTests(ParallelRunner.java:36)
 ]]></failure>
-    <system-out><![CDATA[09:59:31.742 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-09:59:31.758 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630643371755
-09:59:34.869 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:34.869 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:34.869 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:34.869 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:34.869 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:34.869 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:35.309 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:36.674 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3030/products
-1 > Host: localhost:3030
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-1 > Accept-Encoding: gzip,deflate
+    <system-out><![CDATA[19:24:28.645 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:24:28.665 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+19:24:28.695 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+19:24:33.278 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.278 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.278 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.278 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.278 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.278 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.505 [pool-1-thread-1] ERROR com.intuit.karate - classpath:bestBuy/product/postProductRequest.feature:3
+Given url _url
+js failed:
+>>>>
+01: _url
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "_url" is not defined
+- <js>.:program(Unnamed:1)
 
-
-09:59:36.674 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3030/products?%24limit=4
-1 > Host: localhost:3030
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-1 > Accept-Encoding: gzip,deflate
-
-
-09:59:36.674 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+classpath:bestBuy/product/postProductRequest.feature:3
+19:24:33.531 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:33.724 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:36.263 [pool-1-thread-4] DEBUG com.intuit.karate - request:
 1 > GET http://localhost:3030/products/43900
 1 > Host: localhost:3030
 1 > Connection: Keep-Alive
@@ -116,7 +120,33 @@ classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: 
 1 > Accept-Encoding: gzip,deflate
 
 
-09:59:36.675 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+19:24:36.263 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:24:36.263 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products?%24limit=4
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:24:36.265 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 189
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:36.269 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:3030/products
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 197
@@ -126,30 +156,33 @@ classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: 
 1 > Accept-Encoding: gzip,deflate
 {"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:36.675 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3030/products
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 189
-1 > Host: localhost:3030
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-1 > Accept-Encoding: gzip,deflate
-{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
-
-09:59:36.829 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 150
+19:24:37.067 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 792
 1 < 201
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
 1 < Allow: GET,POST,PUT,PATCH,DELETE
 1 < Vary: Accept, Accept-Encoding
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 286
-1 < ETag: W/"11e-TbcTm9eLeTkMt/73W/xXjyia7os"
-1 < Date: Fri, 03 Sep 2021 04:29:36 GMT
+1 < Content-Length: 287
+1 < ETag: W/"11f-rxTHibDDaeASRLTk/+U0eCMnf2w"
+1 < Date: Fri, 03 Sep 2021 13:54:37 GMT
 1 < Connection: keep-alive
-{"id":9999958,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:36.767Z","createdAt":"2021-09-03T04:29:36.767Z"}
-09:59:36.886 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:36.912 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+{"id":10000191,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:36.928Z","createdAt":"2021-09-03T13:54:36.928Z"}
+19:24:37.069 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 789
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 279
+1 < ETag: W/"117-QUHt2rKwD1VAfVThmE69ZDv5bAI"
+1 < Date: Fri, 03 Sep 2021 13:54:37 GMT
+1 < Connection: keep-alive
+{"id":10000190,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:36.874Z","createdAt":"2021-09-03T13:54:36.874Z"}
+19:24:37.130 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:37.157 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:37.160 [pool-1-thread-5] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:3030/products
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 189
@@ -159,20 +192,7 @@ classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: 
 1 > Accept-Encoding: gzip,deflate
 {"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:39.549 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2875
-1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < ETag: W/"448-HK+7FOWwXWiupzaUDo7jVkmRXqo"
-1 < Date: Fri, 03 Sep 2021 04:29:36 GMT
-1 < Connection: keep-alive
-1 < Transfer-Encoding: chunked
-{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]}
-09:59:39.587 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.604 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+19:24:37.174 [pool-1-thread-1] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:3030/products
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 196
@@ -182,20 +202,26 @@ classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: 
 1 > Accept-Encoding: gzip,deflate
 {"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:39.615 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2940
-1 < 201
+---------------------------------------------------------
+feature: classpath:bestBuy/product/postProductRequest.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0.0741
+---------------------------------------------------------
+
+19:24:37.675 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:bestBuy/product/postProductRequest.feature
+19:24:41.028 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 4763
+1 < 200
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
 1 < Allow: GET,POST,PUT,PATCH,DELETE
 1 < Vary: Accept, Accept-Encoding
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 278
-1 < ETag: W/"116-uLL94u8uS3/j+365u3w8M5JPbFA"
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
+1 < ETag: W/"448-HK+7FOWwXWiupzaUDo7jVkmRXqo"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 < Connection: keep-alive
-{"id":9999959,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:36.778Z","createdAt":"2021-09-03T04:29:36.778Z"}
-09:59:39.642 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.662 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 < Transfer-Encoding: chunked
+{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]}
+19:24:41.065 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.082 [pool-1-thread-4] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:3030/products
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 216
@@ -205,7 +231,162 @@ classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: 
 1 > Accept-Encoding: gzip,deflate
 {"name":"IPhone","type":"Mobile","price":3000,"shipping":50,"upc":"dhsfjsdgf sdgfhsgdf kdsgfdshsdf","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:39.665 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2753
+19:24:41.160 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 76
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 158
+1 < ETag: W/"9e-YVgvNVa8nKanMADz5xfoFqZZN3w"
+1 < Vary: Accept-Encoding
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"name":"BadRequest","message":"Invalid Parameters","code":400,"className":"bad-request","data":{},"errors":["'upc' should NOT be longer than 15 characters"]}
+19:24:41.165 [pool-1-thread-4] ERROR com.intuit.karate - classpath:bestBuy/product/productApiTest.feature:125
+Then match response.name == "IPhone"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:125
+19:24:41.174 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.175 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4906
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < ETag: W/"2caa-3F2QiMBCuor70H7KWp/EBvG1+t8"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+1 < Transfer-Encoding: chunked
+{"total":52452,"limit":10,"skip":0,"data":[{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":48530,"name":"Duracell - AA 1.5V CopperTop Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333415017","shipping":0,"description":"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more","manufacturer":"Duracell","model":"MN1500B4Z","url":"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185230,"name":"Duracell - C Batteries (4-Pack)","type":"HardGood","price":8.99,"upc":"041333440019","shipping":0,"description":"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1400R4Z","url":"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185267,"name":"Duracell - D Batteries (4-Pack)","type":"HardGood","price":9.99,"upc":"041333430010","shipping":0,"description":"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1300R4Z","url":"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":309062,"name":"Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black","type":"HardGood","price":144.99,"upc":"012562165141","shipping":0,"description":"80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter","manufacturer":"Pioneer","model":"TS-X200","url":"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302000","name":"Car Audio","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302005","name":"Car Speakers","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat360500050015","name":"4\" Car Speakers","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":312290,"name":"Duracell - 9V Batteries (2-Pack)","type":"HardGood","price":7.99,"upc":"041333216010","shipping":0,"description":"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack","manufacturer":"Duracell","model":"MN1604B2Z","url":"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":333179,"name":"Energizer - N Cell E90 Batteries (2-Pack)","type":"HardGood","price":5.99,"upc":"039800013200","shipping":0,"description":"Alkaline batteries; 1.5V","manufacturer":"Energizer","model":"E90BP-2","url":"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208006","name":"Specialty Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":346575,"name":"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black","type":"HardGood","price":16.99,"upc":"086429002757","shipping":0,"description":"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket","manufacturer":"Metra","model":"99-5512","url":"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat165900050023","name":"Car Installation Parts & Accessories","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050031","name":"Deck Installation Parts","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050033","name":"Dash Installation Kits","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat331600050007","name":"Car Audio Installation Parts","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]}]}
+19:24:41.182 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4912
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < ETag: W/"115e-HhxVUO2SztNcguBe0uu/W5WsyyY"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+1 < Transfer-Encoding: chunked
+{"total":52452,"limit":4,"skip":0,"data":[{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":48530,"name":"Duracell - AA 1.5V CopperTop Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333415017","shipping":0,"description":"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more","manufacturer":"Duracell","model":"MN1500B4Z","url":"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]}]}
+19:24:41.183 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.207 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.212 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
+19:24:41.222 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.242 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.250 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
+19:24:41.274 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 217
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"IPhone","type":"Mobile","price":3000,"shipping":50,"upc":"dhsfjsdgf sdgfhsgdf kdsgfdshsdf ","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.282 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 4120
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 279
+1 < ETag: W/"117-ZV5rWOzVpAK1KfDO+Y7/3+UaI0k"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000192,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:37.191Z","createdAt":"2021-09-03T13:54:37.191Z"}
+19:24:41.292 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:3030/products/10000192
+2 > Host: localhost:3030
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+2 > Accept-Encoding: gzip,deflate
+
+
+19:24:41.338 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 63
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 158
+1 < ETag: W/"9e-YVgvNVa8nKanMADz5xfoFqZZN3w"
+1 < Vary: Accept-Encoding
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"name":"BadRequest","message":"Invalid Parameters","code":400,"className":"bad-request","data":{},"errors":["'upc' should NOT be longer than 15 characters"]}
+19:24:41.343 [pool-1-thread-2] ERROR com.intuit.karate - classpath:bestBuy/product/productApiTest.feature:151
+Then match response.name == "IPhone"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:151
+19:24:41.354 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.358 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
+19:24:41.366 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.392 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 4218
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 286
+1 < ETag: W/"11e-LLnLCEQl6ygPWCKmL/hak3y4J9g"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000193,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:37.217Z","createdAt":"2021-09-03T13:54:37.217Z"}
+19:24:41.407 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.409 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
+19:24:41.418 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.444 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 260
 1 < 201
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
@@ -213,100 +394,13 @@ classpath:bestBuy/product/productApiTest.feature:152 ==> expected: <0> but was: 
 1 < Vary: Accept, Accept-Encoding
 1 < Content-Type: application/json; charset=utf-8
 1 < Content-Length: 278
-1 < ETag: W/"116-CyOQJSXbbJpSU/Wrv+VL7LMOtts"
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
+1 < ETag: W/"116-rTpYRS0fSkoy5Ujlkzu7AlQp7yk"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 < Connection: keep-alive
-{"id":9999960,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:39.545Z","createdAt":"2021-09-03T04:29:39.545Z"}
-09:59:39.723 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 60
-1 < 400
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 158
-1 < ETag: W/"9e-YVgvNVa8nKanMADz5xfoFqZZN3w"
-1 < Vary: Accept-Encoding
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
-1 < Connection: keep-alive
-{"name":"BadRequest","message":"Invalid Parameters","code":400,"className":"bad-request","data":{},"errors":["'upc' should NOT be longer than 15 characters"]}
-09:59:39.728 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-2 > GET http://localhost:3030/products/9999960
-2 > Host: localhost:3030
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-2 > Accept-Encoding: gzip,deflate
-
-
-09:59:39.731 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 125
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 285
-1 < ETag: W/"11d-qixxK/B49DWIXKSHEP0MIF+UvJY"
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
-1 < Connection: keep-alive
-{"id":9999961,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:39.641Z","createdAt":"2021-09-03T04:29:39.641Z"}
-09:59:39.731 [pool-1-thread-5] ERROR com.intuit.karate - classpath:bestBuy/product/productApiTest.feature:103
-Then match response.name == "IPhone"
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  'BadRequest'
-  'IPhone'
-
-classpath:bestBuy/product/productApiTest.feature:103
-09:59:39.744 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.750 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.753 [pool-1-thread-3] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
-09:59:39.755 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3030/products
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 188
-1 > Host: localhost:3030
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-1 > Accept-Encoding: gzip,deflate
-{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
-
-09:59:39.764 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3030/products
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 196
-1 > Host: localhost:3030
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-1 > Accept-Encoding: gzip,deflate
-{"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
-
-09:59:39.821 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3146
-1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < ETag: W/"115e-c9FK4N+AUvL6CzcycMkLE0IhPZs"
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
-1 < Connection: keep-alive
-1 < Transfer-Encoding: chunked
-{"total":52230,"limit":4,"skip":0,"data":[{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":48530,"name":"Duracell - AA 1.5V CopperTop Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333415017","shipping":0,"description":"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more","manufacturer":"Duracell","model":"MN1500B4Z","url":"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]}]}
-09:59:39.823 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3148
-1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < ETag: W/"2caa-wfQv3Ubglmo8opJr5GZcr4pkMpQ"
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
-1 < Connection: keep-alive
-1 < Transfer-Encoding: chunked
-{"total":52230,"limit":10,"skip":0,"data":[{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":48530,"name":"Duracell - AA 1.5V CopperTop Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333415017","shipping":0,"description":"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more","manufacturer":"Duracell","model":"MN1500B4Z","url":"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185230,"name":"Duracell - C Batteries (4-Pack)","type":"HardGood","price":8.99,"upc":"041333440019","shipping":0,"description":"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1400R4Z","url":"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185267,"name":"Duracell - D Batteries (4-Pack)","type":"HardGood","price":9.99,"upc":"041333430010","shipping":0,"description":"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1300R4Z","url":"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":309062,"name":"Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black","type":"HardGood","price":144.99,"upc":"012562165141","shipping":0,"description":"80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter","manufacturer":"Pioneer","model":"TS-X200","url":"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302000","name":"Car Audio","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302005","name":"Car Speakers","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat360500050015","name":"4\" Car Speakers","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":312290,"name":"Duracell - 9V Batteries (2-Pack)","type":"HardGood","price":7.99,"upc":"041333216010","shipping":0,"description":"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack","manufacturer":"Duracell","model":"MN1604B2Z","url":"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":333179,"name":"Energizer - N Cell E90 Batteries (2-Pack)","type":"HardGood","price":5.99,"upc":"039800013200","shipping":0,"description":"Alkaline batteries; 1.5V","manufacturer":"Energizer","model":"E90BP-2","url":"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208006","name":"Specialty Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":346575,"name":"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black","type":"HardGood","price":16.99,"upc":"086429002757","shipping":0,"description":"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket","manufacturer":"Metra","model":"99-5512","url":"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat165900050023","name":"Car Installation Parts & Accessories","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050031","name":"Deck Installation Parts","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050033","name":"Dash Installation Kits","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat331600050007","name":"Car Audio Installation Parts","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]}]}
-09:59:39.860 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.868 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
-09:59:39.880 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+{"id":10000194,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.272Z","createdAt":"2021-09-03T13:54:41.272Z"}
+19:24:41.458 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.460 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
+19:24:41.467 [pool-1-thread-4] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:3030/products
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 217
@@ -316,197 +410,253 @@ classpath:bestBuy/product/productApiTest.feature:103
 1 > Accept-Encoding: gzip,deflate
 {"name":"IPhone","type":"Mobile","price":3000,"shipping":50,"upc":"dhsfjsdgf sdgfhsgdf kdsgfdshsdf ","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:39.888 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 159
+19:24:41.501 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 400
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 158
+1 < ETag: W/"9e-YVgvNVa8nKanMADz5xfoFqZZN3w"
+1 < Vary: Accept-Encoding
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"name":"BadRequest","message":"Invalid Parameters","code":400,"className":"bad-request","data":{},"errors":["'upc' should NOT be longer than 15 characters"]}
+19:24:41.504 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 281
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 286
+1 < ETag: W/"11e-MO6Wu9quj3x/UkEI0/YoC74vejQ"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000195,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.302Z","createdAt":"2021-09-03T13:54:41.302Z"}
+19:24:41.505 [pool-1-thread-4] ERROR com.intuit.karate - classpath:bestBuy/product/productApiTest.feature:175
+Then match response.name == "IPhone"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:175
+19:24:41.513 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.515 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.518 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
+19:24:41.524 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.543 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 197
+1 > Host: localhost:3030
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+
+19:24:41.605 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 238
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 278
+1 < ETag: W/"116-OrJwbR4Sh9OIwdJgX8gkxmr3kuE"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000196,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.413Z","createdAt":"2021-09-03T13:54:41.413Z"}
+19:24:41.617 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:41.619 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 199
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 286
+1 < ETag: W/"11e-lUvlTPjrm14vFVzzZr2TLNpXMaQ"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000197,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.437Z","createdAt":"2021-09-03T13:54:41.437Z"}
+19:24:41.636 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 343
 2 < 200
 2 < X-Powered-By: Express
 2 < Access-Control-Allow-Origin: *
 2 < Allow: GET,POST,PUT,PATCH,DELETE
 2 < Vary: Accept, Accept-Encoding
 2 < Content-Type: application/json; charset=utf-8
-2 < Content-Length: 294
-2 < ETag: W/"126-tgIpowZiZ1AogX9/IP7PGqKLeQA"
-2 < Date: Fri, 03 Sep 2021 04:29:39 GMT
+2 < Content-Length: 295
+2 < ETag: W/"127-CpIDeaY5WNPZ3dNx1EXLnnOe1mA"
+2 < Date: Fri, 03 Sep 2021 13:54:41 GMT
 2 < Connection: keep-alive
-{"id":9999960,"name":"Iphone","type":"Mobile","price":3000,"upc":"Best","shipping":50,"description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","createdAt":"2021-09-03T04:29:39.545Z","updatedAt":"2021-09-03T04:29:39.545Z","categories":[]}
-09:59:39.904 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.905 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.910 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
-09:59:39.916 [pool-1-thread-1] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
-09:59:39.918 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+{"id":10000192,"name":"Iphone","type":"Mobile","price":3000,"upc":"Best","shipping":50,"description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","createdAt":"2021-09-03T13:54:37.191Z","updatedAt":"2021-09-03T13:54:37.191Z","categories":[]}
+19:24:41.639 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:3030/products
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 196
+1 > Content-Length: 197
 1 > Host: localhost:3030
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
 1 > Accept-Encoding: gzip,deflate
-{"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+{"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:39.929 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3030/products
+19:24:41.671 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 146
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 278
+1 < ETag: W/"116-Zctxt2D7StejVfygafAFktMv/6Q"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000198,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.553Z","createdAt":"2021-09-03T13:54:41.553Z"}
+19:24:41.712 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 165
+1 < 201
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 287
+1 < ETag: W/"11f-aRRF+d2pJrFHLICS7RV6P1dLSfQ"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000199,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.587Z","createdAt":"2021-09-03T13:54:41.587Z"}
+19:24:41.722 [pool-1-thread-3] INFO  com.intuit.karate - [print] 10000199 
+19:24:41.728 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:3030/products/10000199
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 188
+1 > Content-Length: 189
 1 > Host: localhost:3030
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
 1 > Accept-Encoding: gzip,deflate
-{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
+{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:39.947 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 66
-1 < 400
+19:24:41.735 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 95
+1 < 201
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
 1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 158
-1 < ETag: W/"9e-YVgvNVa8nKanMADz5xfoFqZZN3w"
-1 < Vary: Accept-Encoding
-1 < Date: Fri, 03 Sep 2021 04:29:39 GMT
+1 < Content-Length: 287
+1 < ETag: W/"11f-Y6ooFmARnQmrpQfemUa+IN/kbV8"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 < Connection: keep-alive
-{"name":"BadRequest","message":"Invalid Parameters","code":400,"className":"bad-request","data":{},"errors":["'upc' should NOT be longer than 15 characters"]}
-09:59:39.953 [pool-1-thread-2] ERROR com.intuit.karate - classpath:bestBuy/product/productApiTest.feature:129
-Then match response.name == "IPhone"
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  'BadRequest'
-  'IPhone'
-
-classpath:bestBuy/product/productApiTest.feature:129
-09:59:39.966 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:39.972 [pool-1-thread-2] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
-09:59:39.982 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3030/products
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 217
+{"id":10000200,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"Best","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T13:54:41.657Z","createdAt":"2021-09-03T13:54:41.657Z"}
+19:24:41.744 [pool-1-thread-2] INFO  com.intuit.karate - [print] 10000200 
+19:24:41.751 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:3030/products/10000200
 1 > Host: localhost:3030
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
 1 > Accept-Encoding: gzip,deflate
-{"name":"IPhone","type":"Mobile","price":3000,"shipping":50,"upc":"dhsfjsdgf sdgfhsgdf kdsgfdshsdf ","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:40.038 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 281
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 277
-1 < ETag: W/"115-6SgmHt6tYS0Ids99FK+LdDfiDJc"
-1 < Date: Fri, 03 Sep 2021 04:29:40 GMT
-1 < Connection: keep-alive
-{"id":9999962,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:39.799Z","createdAt":"2021-09-03T04:29:39.799Z"}
-09:59:40.053 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
-09:59:40.056 [pool-1-thread-5] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'testData' with new value: read("../testData/testData.csv")
-09:59:40.064 [pool-1-thread-5] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3030/products
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 188
-1 > Host: localhost:3030
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
-1 > Accept-Encoding: gzip,deflate
-{"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https:\/\/abc.com","image":"string"}
 
-09:59:40.095 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 112
-1 < 400
+19:24:41.801 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 73
+1 < 200
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
 1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 158
-1 < ETag: W/"9e-YVgvNVa8nKanMADz5xfoFqZZN3w"
-1 < Vary: Accept-Encoding
-1 < Date: Fri, 03 Sep 2021 04:29:40 GMT
+1 < Content-Length: 279
+1 < ETag: W/"117-m7D5g9niyFFq3PTtObNAirt0ZfE"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
 1 < Connection: keep-alive
-{"name":"BadRequest","message":"Invalid Parameters","code":400,"className":"bad-request","data":{},"errors":["'upc' should NOT be longer than 15 characters"]}
-09:59:40.100 [pool-1-thread-2] ERROR com.intuit.karate - classpath:bestBuy/product/productApiTest.feature:152
-Then match response.name == "IPhone"
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  'BadRequest'
-  'IPhone'
+{"id":10000199,"name":"Iphone","type":"Mobile","price":3000,"upc":"Best","shipping":50,"description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","createdAt":"2021-09-03T13:54:41.587Z","updatedAt":"2021-09-03T13:54:41.765Z"}
+19:24:41.815 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 64
+1 < 200
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Vary: Accept, Accept-Encoding
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 287
+1 < ETag: W/"11f-I/hHYxPUjCvcwTwnLUtsrt2Jh8Q"
+1 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+1 < Connection: keep-alive
+{"id":10000200,"name":"Samsung Mobile","type":"Mobile","price":3000,"upc":"Best","shipping":50,"description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","createdAt":"2021-09-03T13:54:41.657Z","updatedAt":"2021-09-03T13:54:41.657Z"}
+19:24:41.822 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:3030/products/10000200
+2 > Host: localhost:3030
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+2 > Accept-Encoding: gzip,deflate
 
-classpath:bestBuy/product/productApiTest.feature:152
-09:59:40.122 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 356
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 285
-1 < ETag: W/"11d-qHtvOQEF3z7NHeOfiklS1E0Hy/Y"
-1 < Date: Fri, 03 Sep 2021 04:29:40 GMT
-1 < Connection: keep-alive
-{"id":9999963,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:39.818Z","createdAt":"2021-09-03T04:29:39.818Z"}
-09:59:40.166 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 247
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 285
-1 < ETag: W/"11d-3/0zTQGi1efduHima2VBy2+HiG0"
-1 < Date: Fri, 03 Sep 2021 04:29:40 GMT
-1 < Connection: keep-alive
-{"id":9999964,"name":"Samsung Mobile","type":"Mobile","price":3000,"shipping":50,"upc":"ABC","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:39.978Z","createdAt":"2021-09-03T04:29:39.978Z"}
-09:59:40.208 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 279
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 277
-1 < ETag: W/"115-vHLJho0sUQagpx7xzqQb9jGEU50"
-1 < Date: Fri, 03 Sep 2021 04:29:40 GMT
-1 < Connection: keep-alive
-{"id":9999965,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:39.994Z","createdAt":"2021-09-03T04:29:39.994Z"}
-09:59:40.242 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 177
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Allow: GET,POST,PUT,PATCH,DELETE
-1 < Vary: Accept, Accept-Encoding
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 277
-1 < ETag: W/"115-Rt+Pm1XOYDJVyLiCiUPC1ZHhkDg"
-1 < Date: Fri, 03 Sep 2021 04:29:40 GMT
-1 < Connection: keep-alive
-{"id":9999966,"name":"Iphone","type":"Mobile","price":3000,"shipping":50,"upc":"BCD","description":"Samsung Mobile 53","manufacturer":"Samsung","model":"S53","url":"https://abc.com","image":"string","updatedAt":"2021-09-03T04:29:40.111Z","createdAt":"2021-09-03T04:29:40.111Z"}
+
+19:24:41.842 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 20
+2 < 404
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Allow: GET,POST,PUT,PATCH,DELETE
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 112
+2 < ETag: W/"70-QcsQkfpESQhVbi30SBwn+ZMLMSk"
+2 < Vary: Accept-Encoding
+2 < Date: Fri, 03 Sep 2021 13:54:41 GMT
+2 < Connection: keep-alive
+{"name":"NotFound","message":"No record found for id '10000200'","code":404,"className":"not-found","errors":{}}
 ---------------------------------------------------------
 feature: classpath:bestBuy/product/productApiTest.feature
-scenarios: 15 | passed: 12 | failed:  3 | time: 25.4887
+scenarios: 15 | passed: 12 | failed:  3 | time: 40.5289
 ---------------------------------------------------------
 
-09:59:42.491 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:bestBuy/product/productApiTest.feature
+19:24:43.339 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:bestBuy/product/productApiTest.feature
+---------------------------------------------------------
+feature: classpath:bestBuy/product/productApiTest2.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.5112
+---------------------------------------------------------
+
+19:24:43.964 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:bestBuy/product/productApiTest2.feature
 Karate version: 1.1.0
 ======================================================
-elapsed:  12.01 | threads:    5 | thread time: 25.49 
-features:     1 | skipped:    0 | efficiency: 0.42
-scenarios:   15 | passed:    12 | failed: 3
+elapsed:  17.56 | threads:    5 | thread time: 41.11 
+features:     3 | skipped:    0 | efficiency: 0.47
+scenarios:   18 | passed:    14 | failed: 4
 ======================================================
 >>> failed features:
+js failed:
+>>>>
+01: _url
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "_url" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:bestBuy/product/postProductRequest.feature:3
 match failed: EQUALS
   $ | not equal (STRING:STRING)
   'BadRequest'
   'IPhone'
 
-classpath:bestBuy/product/productApiTest.feature:103
+classpath:bestBuy/product/productApiTest.feature:125
 match failed: EQUALS
   $ | not equal (STRING:STRING)
   'BadRequest'
   'IPhone'
 
-classpath:bestBuy/product/productApiTest.feature:129
+classpath:bestBuy/product/productApiTest.feature:151
 match failed: EQUALS
   $ | not equal (STRING:STRING)
   'BadRequest'
   'IPhone'
 
-classpath:bestBuy/product/productApiTest.feature:152
+classpath:bestBuy/product/productApiTest.feature:175
 <<<
 
 HTML report: (paste into browser to view) | Karate version: 1.1.0
@@ -514,5 +664,12 @@ file:///C:/Users/SAURABH/eclipse-workspace-new/LearningKarate/target/karate-repo
 ===================================================================
 
 ]]></system-out>
+    <system-err><![CDATA[Sep 03, 2021 7:24:45 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\karate-reports\bestBuy.product.postProductRequest.json' contains 1 features
+Sep 03, 2021 7:24:45 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\karate-reports\bestBuy.product.productApiTest.json' contains 1 features
+Sep 03, 2021 7:24:45 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\SAURABH\eclipse-workspace-new\LearningKarate\target\karate-reports\bestBuy.product.productApiTest2.json' contains 1 features
+]]></system-err>
   </testcase>
 </testsuite>

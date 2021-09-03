@@ -1,0 +1,24 @@
+<testsuite failures="0" name="bestBuy/product/productApiTest2.feature" skipped="0" tests="2" time="0.511232"><testcase classname="bestBuy.product.productApiTest2" name="[1:8] Update product via PUT" time="0.28747"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def postResponse = call read("postProductRequest.feature") {_url: "http://localhost:3030", _path: "products", _name: "Samsung Mobile" } . passed
+* def productId = postResponse.productId .................................. passed
+* print productId ......................................................... passed
+Given path productId ...................................................... passed
+And request ............................................................... passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+Then match response.name == "Iphone" ...................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest2" name="[2:34] Delete a product" time="0.223763"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def postResponse = call read("postProductRequest.feature") {_url: "http://localhost:3030", _path: "products", _name: "Samsung Mobile" } . passed
+* def productId = postResponse.productId .................................. passed
+* print productId ......................................................... passed
+Given path productId ...................................................... passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given path "products/" + productId ........................................ passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed
+</system-out></testcase>
+</testsuite>

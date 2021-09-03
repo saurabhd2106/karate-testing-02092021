@@ -1,0 +1,175 @@
+<testsuite failures="3" name="bestBuy/product/productApiTest.feature" skipped="0" tests="15" time="40.528885"><testcase classname="bestBuy.product.productApiTest" name="[1:10] Get all products from best buy product list" time="7.787736"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.limit == 10 ............................................ passed
+And match response.skip != 5 .............................................. passed
+And match response.data[0].name == "Duracell - AAA Batteries (4-Pack)" .... passed
+And match response.data[0].name contains "Duracell" ....................... passed
+And match response.data[0] contains deep { "name": "Duracell - AAA Batteries (4-Pack)"} . passed
+And match response contains deep {"data" : [{"name": "Duracell - AAA Batteries (4-Pack)"}]} . passed
+And match header Content-Type == "application/json; charset=utf-8" ........ passed
+And match response.total == "#present" .................................... passed
+And match response.total == "#number" ..................................... passed
+And match response.data == "#array" ....................................... passed
+And match response.data == "#[10]" ........................................ passed
+And match response.id == "#notpresent" .................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[2:26] Get products from best buy product list and add limit" time="7.756499"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+* def limit = 4 ........................................................... passed
+And param $limit = limit .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.limit == limit ......................................... passed
+And match response.data == "#[4]" ......................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[3:35] Get one particular product from the list" time="7.583438"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+* def productId = 43900 ................................................... passed
+And path productId ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.id == productId ........................................ passed
+* def categories = {"id": "#string", "name" : "#string", "createdAt" : "#string", "updatedAt" : "#string"} . passed
+And match response == ..................................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[4:63] Add product to the product list" time="3.66162"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+* def name = "Samsung Mobile" ............................................. passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == name .......................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[5:86] Add product to the product list via json file" time="3.567543"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+* def payload = read("../testData/product.json") .......................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Iphone" ...................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[6:93] Add product to the product list via json file and send another get request" time="4.503398"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+* def payload = read("../testData/product.json") .......................... passed
+Given request payload ..................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Iphone" ...................................... passed
+* def productId = response.id ............................................. passed
+And path "products/" + productId .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.name == "Iphone" ....................................... passed
+And match response.id == productId ........................................ passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[7.1:129] Verify add product api with multiple set of test data" time="4.238463"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Samsung Mobile" .............................. passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[7.2:130] Verify add product api with multiple set of test data" time="0.097398"><failure message="match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  'BadRequest'&#10;  'IPhone'&#10;&#10;classpath:bestBuy/product/productApiTest.feature:125">Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+Then match response.name == "IPhone" ...................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:125&#13;
+	at &lt;feature&gt;.: Then match response.name == "IPhone" (classpath:bestBuy/product/productApiTest.feature:125:125)&#13;
+
+</failure></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[7.3:131] Verify add product api with multiple set of test data" time="0.271477"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Iphone" ...................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[8.1:154] Verify add product api with multiple set of test data via csv file" time="0.297323"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Samsung Mobile" .............................. passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[8.2:154] Verify add product api with multiple set of test data via csv file" time="0.097389"><failure message="match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  'BadRequest'&#10;  'IPhone'&#10;&#10;classpath:bestBuy/product/productApiTest.feature:151">Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+Then match response.name == "IPhone" ...................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:151&#13;
+	at &lt;feature&gt;.: Then match response.name == "IPhone" (classpath:bestBuy/product/productApiTest.feature:151:151)&#13;
+
+</failure></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[8.3:154] Verify add product api with multiple set of test data via csv file" time="0.251741"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Iphone" ...................................... passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[9.1:179] Verify add product api with multiple set of test data via csv file" time="0.212809"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Samsung Mobile" .............................. passed
+</system-out></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[9.2:179] Verify add product api with multiple set of test data via csv file" time="0.044707"><failure message="match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  'BadRequest'&#10;  'IPhone'&#10;&#10;classpath:bestBuy/product/productApiTest.feature:175">Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+Then match response.name == "IPhone" ...................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'BadRequest'
+  'IPhone'
+
+classpath:bestBuy/product/productApiTest.feature:175&#13;
+	at &lt;feature&gt;.: Then match response.name == "IPhone" (classpath:bestBuy/product/productApiTest.feature:175:175)&#13;
+
+</failure></testcase>
+<testcase classname="bestBuy.product.productApiTest" name="[9.3:179] Verify add product api with multiple set of test data via csv file" time="0.157344"><system-out>Given url "http://localhost:3030" ......................................... passed
+And path "products" ....................................................... passed
+* def testData = read("../testData/testData.csv") ......................... passed
+Given request ............................................................. passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+Then match response.name == "Iphone" ...................................... passed
+</system-out></testcase>
+</testsuite>

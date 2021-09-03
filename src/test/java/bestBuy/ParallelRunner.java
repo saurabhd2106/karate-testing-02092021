@@ -27,7 +27,7 @@ public class ParallelRunner {
 
 		results = Runner.path("classpath:bestBuy/product")
 				.outputCucumberJson(true)
-				.outputHtmlReport(true)
+				.outputJunitXml(true)
 				.outputHtmlReport(true)
 				.parallel(5);
 
